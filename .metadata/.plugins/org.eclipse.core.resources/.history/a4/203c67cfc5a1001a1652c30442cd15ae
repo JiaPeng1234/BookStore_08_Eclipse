@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register Member</title>
+<link type="text/css" rel="stylesheet" href="../../static/css/style.css" >
+<style type="text/css">
+	.login_form{
+		height:420px;
+		margin-top: 27px;
+	}
+	
+</style>
+<!-- 引入jQuery文件 -->
+<script type="text/javascript" src="../../static/js/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	$(function() {
+		//1. 验证用户名，密码，确认密码，email是否符合规定
+		$("#sub_btn").click(function(){
+			//2. 验证成功，提交表单
+			  //获取用户输入的所有值
+			  var username = $(".itxt[name='username']").val();
+			  var password = $(".itxt[name='password']").val();
+			  var repwd = $(".itxt[name='repwd']").val();
+			  var email = $(".itxt[name='email']").val();
+			  var code = $(".itxt[id='code']").val();
+			  
+			  //用户名规则： 长度>5 <8  不能写非法字符  合法：（字母，数字，_，-）
+			  //密码规则： 长度>5 <18 不能写非法字符  合法（字母，数字，_，-）
+			  //确认密码规则： 和密码相同
+			  //email：xxx@aa.com
+			  //前端保障验证码输入值即可，后端验证一不一样
+			  
+			  //创建正则表达式：作用：验证是否符合表达式规则
+			  var regUserName = /^[a-zA-Z0-9_-]{5,18}$/;
+			  var regPwd = /^[a-zA-Z0-9_-]{5,18}$/;
+			  var regEmail = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+			  
+			  if(!regUserName.test(username)){
+				  $(".errorMsg").text("Unvalid username!");
+				  return false;
+			  }
+			  if(!regPwd.test(password)){
+				  $(".errorMsg").text("Unvalid password!");
+				  return false;
+			  }
+			  if(repwd != password){
+				  $(".errorMsg").text("Passwords don't match!");
+				  return false;
+			  }
+			  if(!regEmail.test(email)){
+				  $(".errorMsg").text("Unvalid email!");
+				  return false;
+			  }
+			  if(code == ""){
+				  $(".errorMsg").text("Enter security code!");
+				  return false;
+			  }
+			  
+			//3. 验证失败，交代为什么失败
+			
+		});
+	});
+</script>
+</head>
+<body>
+		<div id="login_header">
+			<img class="logo_img" alt="" src="../../static/img/logo.png" width="20%" >
+		</div>
+		
+			<div class="login_banner">
+			
+				<div id="l_content">
+					<span class="login_word">Welcome ;)</span>
+				</div>
+				
+				<div id="content">
+					<div class="login_form">
+						<div class="login_box">
+							<div class="tit">
+								<h1>New Member</h1>
+								<span class="errorMsg"></span>
+							</div>
+							<br />
+							<div class="form">
+								<form action="regist_success.html">
+									<label>User Name:</label>
+									<input class="itxt" type="text" placeholder="Enter User Name" autocomplete="off" tabindex="1" name="username" id="username" />
+									<br />
+									<br />
+									<label>Password:</label>
+									<input class="itxt" type="password" placeholder="Enter Password" autocomplete="off" tabindex="1" name="password" id="password" />
+									<br />
+									<br />
+									<label>Confirm: </label>
+									<input class="itxt" type="password" placeholder="Confirm Password" autocomplete="off" tabindex="1" name="repwd" id="repwd" />
+									<br />
+									<br />
+									<label>E-Mail:</label>
+									<input class="itxt" type="text" placeholder="Enter E-Mail Adress" autocomplete="off" tabindex="1" name="email" id="email" />
+									<br />
+									<br />
+									<label>Security Code:</label>
+									<input class="itxt" type="text" style="width: 150px;" id="code"/>
+									<img alt="" src="../../static/img/code.bmp" style="float: right; margin-right: 5px">									
+									<br />
+									<br />
+									<input type="submit" value="Submit" id="sub_btn" />
+								</form>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		<div id="bottom">
+			<span>
+				PengBookStore.Copyright &copy;2020
+			</span>
+		</div>
+</body>
+</html>

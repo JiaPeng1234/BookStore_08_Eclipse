@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="com.mchange.v2.c3p0.ComboPooledDataSource"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.QueryRunner"/>
+<fullyQualifiedTypeName name="java.lang.reflect.ParameterizedType"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="peng.utils.JDBCUtils"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanListHandler"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanHandler"/>
+<fullyQualifiedTypeName name="peng.dao.BaseDao"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="peng.dao.UserDao"/>
+<fullyQualifiedTypeName name="peng.dao.Impl.UserDaoImpl"/>
+<fullyQualifiedTypeName name="peng.service.UserService"/>
+<fullyQualifiedTypeName name="peng.service.Impl.UserServiceImpl"/>
+<fullyQualifiedTypeName name="peng.bean.User"/>
+</qualifiedTypeNameHistroy>
