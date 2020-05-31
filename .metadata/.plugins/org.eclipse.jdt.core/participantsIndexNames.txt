@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+D:\Web_Develop\009_LoginTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\693257425.index
+\BookStore_02\src
+D:\Web_Develop\009_LoginTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\511553202.index
+\BookStore_02\src
+D:\Web_Develop\009_LoginTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2098088308.index
+\BookStore_02\src
+D:\Web_Develop\009_LoginTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2555244620.index
+\BookStore_02\src
+D:\Web_Develop\009_LoginTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1582996400.index
+\BookStore_02\src
+D:\Web_Develop\009_LoginTest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2237053233.index
+\BookStore_02\src
