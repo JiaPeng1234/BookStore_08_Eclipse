@@ -78,13 +78,16 @@
 						<div class="login_box">
 							<div class="tit">
 								<h1>New Member</h1>
-								<span class="errorMsg"></span>
+								<span class="errorMsg">
+								<%=request.getAttribute("msg")==null? "":request.getAttribute("msg")%>
+								</span>
 							</div>
 							<br />
 							<div class="form">
 								<form action="user/RegistServlet" method="post">
 									<label>User Name:</label>
-									<input class="itxt" type="text" placeholder="Enter User Name" autocomplete="off" tabindex="1" name="username" id="username" />
+									<input class="itxt" type="text" placeholder="Enter User Name" autocomplete="off" tabindex="1" name="username" id="username" 
+									values="<%=request.getParameter("username")%>"/>
 									<br />
 									<br />
 									<label>Password:</label>
@@ -96,7 +99,8 @@
 									<br />
 									<br />
 									<label>E-Mail:</label>
-									<input class="itxt" type="text" placeholder="Enter E-Mail Adress" autocomplete="off" tabindex="1" name="email" id="email" />
+									<input class="itxt" type="text" placeholder="Enter E-Mail Adress" autocomplete="off" tabindex="1" name="email" id="email" 
+									values="<%=request.getParameter("email")%>"/>
 									<br />
 									<br />
 									<label>Security Code:</label>

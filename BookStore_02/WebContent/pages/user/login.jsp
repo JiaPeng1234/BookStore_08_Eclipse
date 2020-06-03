@@ -5,8 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Bookstore login</title>
-<base href="http://localhost:8080/BookStore_02/"/>
-<link type="text/css" rel="stylesheet" href="static/css/style.css" >
+<%@include file="/include/base.jsp" %>
 </head>
 <body>
 		<div id="login_header">
@@ -24,16 +23,19 @@
 						<div class="login_box">
 							<div class="tit">
 								<h1>Login</h1>
-								<a href="pages/user/regist.html">Register new member</a>
+								<a href="pages/user/regist.jsp">Register new member</a>
 							</div>
 							<div class="msg_cont">
 								<b></b>
-								<span class="errorMsg">Enter username and password</span>
+								<span class="errorMsg">
+								<%=request.getAttribute("msg")==null?"Enter username and password":request.getAttribute("msg") %>
+								</span>
 							</div>
 							<div class="form">
 								<form action="user/LoginServlet" method="post">
 									<label>User Name: </label>
-									<input class="itxt" type="text" placeholder="Enter username" autocomplete="off" tabindex="1" name="username" />
+									<input class="itxt" type="text" placeholder="Enter username" autocomplete="off" tabindex="1" name="username" 
+									value="<%=request.getParameter("username")==null?"":request.getParameter("username")%>"/>
 									<br />
 									<br />
 									<label>Password: </label>
