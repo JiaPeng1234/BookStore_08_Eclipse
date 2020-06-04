@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v6.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v6.0 Server at localhost" instanceDir="D:\Tomcat_Server\Tomcat6.0.39_009" name="Tomcat v6.0 Server at localhost" runtime-id="Apache Tomcat v6.0" server-type="org.eclipse.jst.server.tomcat.60" server-type-id="org.eclipse.jst.server.tomcat.60" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="14">
-    <list key="modules" value0="BookStore_03::org.eclipse.jst.jee.server:BookStore_03::jst.web::2.5"/>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v6.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v6.0 Server at localhost" instanceDir="D:\Tomcat_Server\Tomcat6.0.39_009" name="Tomcat v6.0 Server at localhost" runtime-id="Apache Tomcat v6.0" server-type="org.eclipse.jst.server.tomcat.60" server-type-id="org.eclipse.jst.server.tomcat.60" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="16">
+    <list key="modules" value0="BookStore_04::org.eclipse.jst.jee.server:BookStore_04::jst.web::2.5"/>
   </server>
 </servers>
