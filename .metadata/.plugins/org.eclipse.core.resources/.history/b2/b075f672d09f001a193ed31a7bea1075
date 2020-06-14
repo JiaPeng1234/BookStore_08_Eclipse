@@ -1,5 +1,0 @@
-package peng.service;
-
-public interface UserService {
-
-}

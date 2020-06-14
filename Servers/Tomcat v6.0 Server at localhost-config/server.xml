@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="BookStore_04" path="/BookStore_04" reloadable="true" source="org.eclipse.jst.jee.server:BookStore_04"/></Host>
+      <Context docBase="BookStore_05" path="/BookStore_05" reloadable="true" source="org.eclipse.jst.jee.server:BookStore_05"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -1,0 +1,78 @@
+1. Phase 001:
+
+form validation: verify user input
+username: can't be empty, 6-18characters
+password: >6 characters without special ones
+verify password: same as password
+email: in a valid form xxx@xxx.xxx
+
+
+2. Phase 002:
+
+项目分层架构：
+1.表示层：和用户直接交互
+1）html页面
+2）servlet，只有一句话调用service类
+
+2.业务逻辑层：处理网站业务功能
+1）Service层：User Service； Login Regist
+
+3.数据库访问层：（持久化层）
+1）Dao层: 所有操作数据库的类放在Dao Database Access Object
+2）模型层: 创建与数据库数据对应的对象（以后就从对象里面拿就行了）（Bean层）
+
+开发项目：
+1）需求分析、建立模型 
+	从数据库端往前端建立
+  1、 建立注册登录相关的模型（bean层）
+  		1-建立用户表
+  			当数据表很多的时候也需要分层，一般按照命名规则分层即可
+  			auth_user
+  			sys_user
+  			bbs_content
+  			...
+  			bs_user:
+  				主键：自增
+  				username:vrchar
+  				password:varchar
+  				email:varchar
+  			操作：create database ...
+  		2-建立对应的user类
+  		    	private id
+  				private username
+  				private password
+  				private email
+  				
+  				generate getter setter toString constructor with/without parameters
+  2、 简历Dao层：操作数据库
+  		1-JDBCUtils用来获取数据库连接 . 使用c3p0
+  			1、 导包三个
+  		
+  		建立baseDAO用来被其他类继承，定义一些基本的操作，bookDAO继承则查book对象，userDAO继承则查user对象
+  		BaseBao<T>:
+  			public T getBean()
+  			
+  		2-UserDao 操作User表的DAO类
+  			面向接口编程：
+  			定义UserDao接口，定义UserDao有什么方法，这样方便在项目一开始就奠定架构
+  			UserDao接口：
+  			User getUserByUserNameAndPassword(User user)
+  			boolean registUser(User user)
+  			
+  3、Service层建立：
+  		UserService：主要完成用户的登录注册功能
+  		同样是面向接口编程：
+  		Userservice 接口：
+  			User login(User user)
+  			boolean regist(User user)
+  		
+  4、Servlet层：处理用户的要求
+  		1-LoginServlet  处理登陆请求
+  		2-RegistServlet	处理注册请求
+  
+  5、界面：相应User逻辑
+  		1-修改相应的逻辑
+
+
+
+
