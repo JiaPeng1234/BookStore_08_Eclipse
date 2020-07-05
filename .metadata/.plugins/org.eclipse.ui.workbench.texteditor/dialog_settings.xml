@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=""/>
+		<item key="selection" value="font-size"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="font-size"/>
+			<item value="login"/>
+			<item value="checkout"/>
+			<item value="client"/>
 			<item value="?"/>
+			<item value="welcome"/>
+			<item value="system"/>
+			<item value="Index"/>
+			<item value="has"/>
+			<item value="getTotalCountByPrice"/>
+			<item value="getPageByPrice"/>
+			<item value="getPageList"/>
+			<item value="method"/>
+			<item value="url"/>
 			<item value="page"/>
-			<item value="list"/>
-			<item value="input"/>
-			<item value="pn_input"/>
-			<item value="form"/>
-			<item value="index"/>
-			<item value="totalPage"/>
-			<item value="bookService"/>
-			<item value="del"/>
-			<item value="html"/>
-			<item value="href"/>
-			<item value="wel_word"/>
-			<item value="head_href"/>
-			<item value="&quot;wel_word&quot;"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1219"/>
-		<item key="DIALOG_Y_ORIGIN" value="412"/>
+		<item key="DIALOG_X_ORIGIN" value="1232"/>
+		<item key="DIALOG_Y_ORIGIN" value="-563"/>
 		<item key="DIALOG_WIDTH" value="300"/>
-		<item key="DIALOG_HEIGHT" value="420"/>
+		<item key="DIALOG_HEIGHT" value="414"/>
 		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
 	</section>
 </section>
