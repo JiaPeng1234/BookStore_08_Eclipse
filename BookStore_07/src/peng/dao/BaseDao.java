@@ -1,9 +1,11 @@
 package peng.dao;
 
+import java.io.IOException;
 import java.lang.reflect.ParameterizedType;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.MissingResourceException;
 
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
@@ -34,7 +36,7 @@ public class BaseDao<T> {
 	 * 
 	 * @return
 	 */
-	public T getBean(String sql, Object...params) {
+	public T getBean(String sql, Object...params){
 		Connection connection = JDBCUtils.getConnection();
 		T query = null;
 		try {
@@ -42,9 +44,11 @@ public class BaseDao<T> {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} finally {
-			JDBCUtils.releaseConnection(connection);
-		}
+			throw new RuntimeException("BaseDao exception occurs");
+		} 
+//		finally {
+//			JDBCUtils.releaseConnection(connection);
+//		}
 		return query;
 	}
 
@@ -54,17 +58,19 @@ public class BaseDao<T> {
 	 * @return
 	 */
 	
-	public List<T> getBeanList(String sql, Object...params) {
+	public List<T> getBeanList(String sql, Object...params){
 		Connection connection = JDBCUtils.getConnection();
 		List<T> query = null;
 		try {
 			query = runner.query(connection, sql, new BeanListHandler<>(type), params);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} finally {
-			JDBCUtils.releaseConnection(connection);
-		}
+			 e.printStackTrace();
+			throw new RuntimeException("BaseDao exception occurs");
+		} 
+//		finally {
+//			JDBCUtils.releaseConnection(connection);
+//		}
 		return query;
 	}
 
@@ -74,7 +80,7 @@ public class BaseDao<T> {
 	 * @param params
 	 * @return
 	 */
-	public int update(String sql, Object...params) {
+	public int update(String sql, Object...params){
 		//
 		int count = 0;
 		Connection connection = JDBCUtils.getConnection();
@@ -82,10 +88,12 @@ public class BaseDao<T> {
 			count = runner.update(connection, sql, params);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} finally {
-			JDBCUtils.releaseConnection(connection);
-		}
+			 e.printStackTrace();
+			throw new RuntimeException("BaseDao exception occurs");
+		} 
+//		finally {
+//			JDBCUtils.releaseConnection(connection);
+//		}
 		return count;
 	}
 	
@@ -93,17 +101,19 @@ public class BaseDao<T> {
 	 * BaseDao返回单个值的方法, BookDao中会用到
 	 * @return
 	 */
-	public Object getSingleValue(String sql, Object...params) {
+	public Object getSingleValue(String sql, Object...params){
 		Object query = null;
 		Connection connection = JDBCUtils.getConnection();
 		try {
 			query = runner.query(connection, sql, new ScalarHandler(), params);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} finally {
-			JDBCUtils.releaseConnection(connection);
-		}
+			 e.printStackTrace();
+			throw new RuntimeException("BaseDao exception occurs");
+		} 
+//		finally {
+//			JDBCUtils.releaseConnection(connection);
+//		}
 		return query;
 	}
 	
@@ -113,15 +123,17 @@ public class BaseDao<T> {
 	 * @param params
 	 * @return
 	 */
-	public int batch(String sql, Object[][] params) {
+	public int batch(String sql, Object[][] params){
 		Connection connection = JDBCUtils.getConnection();
 		try {
 			runner.batch(connection, sql, params);
 		} catch (SQLException e) {
-			e.printStackTrace();
-		} finally {
-			JDBCUtils.releaseConnection(connection);
-		}
+			 e.printStackTrace();
+			throw new RuntimeException("BaseDao exception occurs");
+		} 
+//		finally {
+//			JDBCUtils.releaseConnection(connection);
+//		}
 		return 1;
 	}
 }

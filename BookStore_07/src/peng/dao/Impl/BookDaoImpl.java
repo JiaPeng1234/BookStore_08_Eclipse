@@ -43,6 +43,8 @@ public class BookDaoImpl extends BaseDao<Book> implements BookDao {
 	 */
 	@Override
 	public boolean updateBook(Book book) {
+		System.out.println("更新图书");
+		// 此处整了一个异常
 		String sql = "update bs_book set title=? , author=? , price=? , sales=? , stock=? , img_path=? where id=?";
 		int update = update(sql, book.getTitle(), book.getAuthor(), book.getPrice(), book.getSales(), book.getStock(),
 				book.getImgPath(), book.getId());

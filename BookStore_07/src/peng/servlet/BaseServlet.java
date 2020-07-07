@@ -38,6 +38,7 @@ public class BaseServlet extends HttpServlet {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			throw new RuntimeException("Exception from BaseServlet... ");
 		}
 		
 	}
