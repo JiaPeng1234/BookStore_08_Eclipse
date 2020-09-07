@@ -28,7 +28,6 @@
 <fullyQualifiedTypeName name="java.math.BigDecimal"/>
 <fullyQualifiedTypeName name="peng.service.BookService"/>
 <fullyQualifiedTypeName name="peng.service.Impl.BookServiceImpl"/>
-<fullyQualifiedTypeName name="peng.bean.Book"/>
 <fullyQualifiedTypeName name="peng.bean.Cart"/>
 <fullyQualifiedTypeName name="peng.bean.User"/>
 <fullyQualifiedTypeName name="peng.utils.WebUtils"/>
@@ -38,8 +37,6 @@
 <fullyQualifiedTypeName name="peng.bean.Constants"/>
 <fullyQualifiedTypeName name="peng.service.Impl.BookDaoImpl"/>
 <fullyQualifiedTypeName name="peng.dao.Impl.BookDaoImpl"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="peng.utils.JDBCUtils"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
@@ -48,4 +45,8 @@
 <fullyQualifiedTypeName name="java.util.MissingResourceException"/>
 <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="peng.bean.Book"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.google.gson.Gson"/>
 </qualifiedTypeNameHistroy>
