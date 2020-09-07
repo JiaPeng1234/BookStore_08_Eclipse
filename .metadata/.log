@@ -9722,3 +9722,283 @@ java.lang.RuntimeException
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
 	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
 	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.core.resources 2 2 2020-09-07 17:56:10.501
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-09-07 17:56:10.501
+!MESSAGE The project description file (.project) for 'BookStore_02' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-09-07 17:56:10.501
+!MESSAGE The project description file (.project) for 'BookStore_03' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-09-07 17:56:10.501
+!MESSAGE The project description file (.project) for 'BookStore_04' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-09-07 17:56:10.501
+!MESSAGE The project description file (.project) for 'BookStore_05' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-09-07 17:56:10.501
+!MESSAGE The project description file (.project) for 'BookStore_06' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-09-07 17:56:10.501
+!MESSAGE The project description file (.project) for 'Test003' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2020-09-07 17:56:10.852
+!MESSAGE File not found: D:\Web_Develop\009_LoginTest\BookStore_02\WebContent\WEB-INF\web.xml.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/BookStore_02/WebContent/WEB-INF/web.xml)[368]: java.lang.Exception: File not found: D:\Web_Develop\009_LoginTest\BookStore_02\WebContent\WEB-INF\web.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.readContents(FileContentCache.java:114)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.<init>(FileContentCache.java:56)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache.getContents(FileContentCache.java:230)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:767)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getCachedDescriptor(DeploymentDescriptorPropertyCache.java:834)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:891)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:468)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2020-09-07 17:56:10.853
+!MESSAGE File not found: D:\Web_Develop\009_LoginTest\BookStore_02\WebContent\WEB-INF\web.xml.
+!STACK 0
+java.lang.Exception: File not found: D:\Web_Develop\009_LoginTest\BookStore_02\WebContent\WEB-INF\web.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.readContents(FileContentCache.java:114)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.<init>(FileContentCache.java:56)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache.getContents(FileContentCache.java:230)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:767)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getCachedDescriptor(DeploymentDescriptorPropertyCache.java:834)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:891)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:468)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2020-09-07 17:56:11.766
+!MESSAGE File not found: D:\Web_Develop\009_LoginTest\BookStore_03\WebContent\WEB-INF\web.xml.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/BookStore_03/WebContent/WEB-INF/web.xml)[368]: java.lang.Exception: File not found: D:\Web_Develop\009_LoginTest\BookStore_03\WebContent\WEB-INF\web.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.readContents(FileContentCache.java:114)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.<init>(FileContentCache.java:56)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache.getContents(FileContentCache.java:230)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:767)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getCachedDescriptor(DeploymentDescriptorPropertyCache.java:834)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:891)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:468)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2020-09-07 17:56:11.767
+!MESSAGE File not found: D:\Web_Develop\009_LoginTest\BookStore_03\WebContent\WEB-INF\web.xml.
+!STACK 0
+java.lang.Exception: File not found: D:\Web_Develop\009_LoginTest\BookStore_03\WebContent\WEB-INF\web.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.readContents(FileContentCache.java:114)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.<init>(FileContentCache.java:56)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache.getContents(FileContentCache.java:230)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:767)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getCachedDescriptor(DeploymentDescriptorPropertyCache.java:834)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:891)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:468)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2020-09-07 17:56:12.248
+!MESSAGE File not found: D:\Web_Develop\009_LoginTest\BookStore_04\WebContent\WEB-INF\web.xml.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/BookStore_04/WebContent/WEB-INF/web.xml)[368]: java.lang.Exception: File not found: D:\Web_Develop\009_LoginTest\BookStore_04\WebContent\WEB-INF\web.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.readContents(FileContentCache.java:114)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.<init>(FileContentCache.java:56)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache.getContents(FileContentCache.java:230)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:767)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getCachedDescriptor(DeploymentDescriptorPropertyCache.java:834)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:891)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:468)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2020-09-07 17:56:12.249
+!MESSAGE File not found: D:\Web_Develop\009_LoginTest\BookStore_04\WebContent\WEB-INF\web.xml.
+!STACK 0
+java.lang.Exception: File not found: D:\Web_Develop\009_LoginTest\BookStore_04\WebContent\WEB-INF\web.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.readContents(FileContentCache.java:114)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.<init>(FileContentCache.java:56)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache.getContents(FileContentCache.java:230)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:767)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getCachedDescriptor(DeploymentDescriptorPropertyCache.java:834)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:891)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:468)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2020-09-07 17:56:12.871
+!MESSAGE File not found: D:\Web_Develop\009_LoginTest\BookStore_05\WebContent\WEB-INF\web.xml.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/BookStore_05/WebContent/WEB-INF/web.xml)[368]: java.lang.Exception: File not found: D:\Web_Develop\009_LoginTest\BookStore_05\WebContent\WEB-INF\web.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.readContents(FileContentCache.java:114)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.<init>(FileContentCache.java:56)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache.getContents(FileContentCache.java:230)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:767)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getCachedDescriptor(DeploymentDescriptorPropertyCache.java:834)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:891)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:468)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2020-09-07 17:56:12.871
+!MESSAGE File not found: D:\Web_Develop\009_LoginTest\BookStore_05\WebContent\WEB-INF\web.xml.
+!STACK 0
+java.lang.Exception: File not found: D:\Web_Develop\009_LoginTest\BookStore_05\WebContent\WEB-INF\web.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.readContents(FileContentCache.java:114)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.<init>(FileContentCache.java:56)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache.getContents(FileContentCache.java:230)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:767)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getCachedDescriptor(DeploymentDescriptorPropertyCache.java:834)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:891)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:468)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jst.jsp.core 4 4 2020-09-07 17:56:13.334
+!MESSAGE File not found: D:\Web_Develop\009_LoginTest\BookStore_06\WebContent\WEB-INF\web.xml.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/BookStore_06/WebContent/WEB-INF/web.xml)[368]: java.lang.Exception: File not found: D:\Web_Develop\009_LoginTest\BookStore_06\WebContent\WEB-INF\web.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.readContents(FileContentCache.java:114)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.<init>(FileContentCache.java:56)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache.getContents(FileContentCache.java:230)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:767)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getCachedDescriptor(DeploymentDescriptorPropertyCache.java:834)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:891)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:468)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2020-09-07 17:56:13.334
+!MESSAGE File not found: D:\Web_Develop\009_LoginTest\BookStore_06\WebContent\WEB-INF\web.xml.
+!STACK 0
+java.lang.Exception: File not found: D:\Web_Develop\009_LoginTest\BookStore_06\WebContent\WEB-INF\web.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.readContents(FileContentCache.java:114)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache$CacheEntry.<init>(FileContentCache.java:56)
+	at org.eclipse.jst.jsp.core.internal.util.FileContentCache.getContents(FileContentCache.java:230)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.fetchDescriptor(DeploymentDescriptorPropertyCache.java:767)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getCachedDescriptor(DeploymentDescriptorPropertyCache.java:834)
+	at org.eclipse.jst.jsp.core.internal.contenttype.DeploymentDescriptorPropertyCache.getPropertyGroups(DeploymentDescriptorPropertyCache.java:891)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:468)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
