@@ -7,4 +7,21 @@ Used java packages are located under BookStore_JavaWeb/BookStore_08/WebContent/W
 
 Using Apache Tomcat 6.0.39  
 
-# How to run
+## How to run
+1. download code of folder Bookstore. Import it as a project in your eclipse workspace
+2. create a tomcat6.0 server, run BookStore_08/WebContent/index.jsp on server
+
+## Modules
+### User regist && login
+user register:  
+
+user login:  
+
+### Homepage
+
+### Backend system for administrator
+book manager:
+
+order manager:
+
+### Order && Cart
