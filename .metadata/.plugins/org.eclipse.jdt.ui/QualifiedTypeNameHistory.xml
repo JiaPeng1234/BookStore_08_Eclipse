@@ -49,4 +49,5 @@
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="peng.service.Impl.OrderItemServiceImpl"/>
 </qualifiedTypeNameHistroy>
