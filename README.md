@@ -19,15 +19,17 @@ Using Apache Tomcat 6.0.39
 user register:  
 ![gifview](mdpics/bookstoreregist.gif)  
 user login:  
-
+![gifview](mdpics/bookstoreLogin.gif)  
 ### Homepage
 searching by price：  
-
+![gifview](mdpics/homepage.gif) 
 ### Backend system for administrator
 book manager:  
 book CRUD:  
-
+![gifview](mdpics/bookmanager.gif) 
 order manager:  
-
+![gifview](mdpics/ordermanager.gif) 
 ### Order && Cart
-go checkout and ship the order:  
+go checkout and ship the order: 
+![gifview](mdpics/checkoutandship.gif) 
+
