@@ -17,7 +17,7 @@ Using Apache Tomcat 6.0.39
 ## Modules
 ### User regist && login
 user register:  
-
+![gifview](mdpics/bookstoreregist.gif)  
 user login:  
 
 ### Homepage
