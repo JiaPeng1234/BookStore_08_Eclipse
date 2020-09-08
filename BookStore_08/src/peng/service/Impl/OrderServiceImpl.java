@@ -33,6 +33,11 @@ public class OrderServiceImpl implements OrderService {
 	public List<Order> getMyOrders(Integer UserId) {
 		return od.getOrderByUserId(UserId);
 	}
+	
+	@Override
+	public Order getOneOrder(String orderId) {
+		return od.getOne(orderId);
+	}
 
 	@Override
 	public void updateStatus(String orderid, String status) {

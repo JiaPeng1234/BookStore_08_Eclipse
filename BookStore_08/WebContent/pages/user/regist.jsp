@@ -29,6 +29,8 @@
 				$.get("UserServlet?method=checkuser&username="+username,function(data){
 					$(".errorMsg").html(data);
 				});
+			}else{
+				$(".errorMsg").text("Unvalid username!");
 			}
 		});
 		

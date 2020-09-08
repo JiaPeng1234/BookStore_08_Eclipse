@@ -33,4 +33,5 @@ public interface OrderDao {
 	 */
 	public List<Order> getOrderByUserId(Integer userId);
 
+	public Order getOne(String orderId);
 }

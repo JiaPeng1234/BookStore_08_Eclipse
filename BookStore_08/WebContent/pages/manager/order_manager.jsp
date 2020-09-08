@@ -29,7 +29,7 @@
 					<td>${order.orderId }</td>
 					<td>${order.createDate }</td>
 					<td>$${order.totalMoney }</td>
-					<td><a href="#">Details</a></td>
+					<td><a href="manager/OrderManagerServlet?method=detail&orderId=${order.orderId }">Details</a></td>
 					<td>
 						<c:choose>
 							<c:when test="${order.status == 0 }">

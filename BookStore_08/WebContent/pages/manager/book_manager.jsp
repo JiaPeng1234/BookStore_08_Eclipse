@@ -12,7 +12,7 @@
 	$(function() {
 		$(".delBtn").click(function() {
 			let td = $(this).parent().parent().children(":first");
-			if (!confirm("Do you want to delete" + td.text() + "?")) {
+			if (!confirm("Do you want to delete " + td.text() + "?")) {
 				return false;
 			}
 		});

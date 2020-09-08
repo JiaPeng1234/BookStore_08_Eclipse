@@ -23,7 +23,7 @@
 			$.getJSON(href+"client/CartServlet?method=updateAjax&id="+id+"&count="+count, function(data){
 				$(".b_count").text(data.totalCount);
 				$(".b_price").text(data.totalMoney);
-				$(".changeInput").val(data.updateCount);
+				$("#count_"+id).val(data.updateCount);
 				// Subtotal money of this cartitem
 				$("#price_"+id).text(data.itemTotalPrice);
 			});
@@ -75,7 +75,7 @@
 					<tr>
 						<td>${cartItem.book.title }</td>
 						<td>
-							<input class="changeInput" type="text" style="width: 35px" name="count" updateid="${cartItem.book.id }" value="${cartItem.count }" />
+							<input class="changeInput" id="count_${cartItem.book.id }" type="text" style="width: 35px" name="count" updateid="${cartItem.book.id }" value="${cartItem.count }" />
 						</td>
 						<td>${cartItem.book.price }</td>
 						<td id="price_${cartItem.book.id }">${cartItem.totalPrice }</td>

@@ -37,5 +37,12 @@ public class OrderDaoImpl extends BaseDao<Order> implements OrderDao {
 		return getBeanList(sql, userId);
 	}
 
-	
+	/**
+	 * return one order
+	 */
+	@Override
+	public Order getOne(String orderId) {
+		String sql = "select order_id orderId, create_date createDate, total_money totalMoney, status, user_id userId from bs_order where order_id=?";
+		return getBean(sql, orderId);
+	}
 }

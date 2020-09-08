@@ -10,7 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import peng.bean.Constants;
 import peng.bean.Order;
+import peng.bean.OrderItem;
+import peng.service.OrderItemService;
 import peng.service.OrderService;
+import peng.service.Impl.OrderItemServiceImpl;
 import peng.service.Impl.OrderServiceImpl;
 
 /**
@@ -19,6 +22,7 @@ import peng.service.Impl.OrderServiceImpl;
 public class OrderManagerServlet extends BaseServlet {
 	private static final long serialVersionUID = 1L;
     OrderService os = new OrderServiceImpl();
+    OrderItemService ois = new OrderItemServiceImpl();
     
 	protected void list(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 1. get all orders
@@ -39,5 +43,29 @@ public class OrderManagerServlet extends BaseServlet {
 		String refer = request.getHeader("referer");
 		response.sendRedirect(refer);
 		//	request.getRequestDispatcher("/manager/OrderManagerServlet?method=list").forward(request, response);
+	}
+	
+	protected void detail(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// 1. get orderitems of this order
+		List<OrderItem> orderItems = null;
+		try {
+			orderItems = ois.getOrderItems(request.getParameter("orderId"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		Order thisOrder = null;
+		try {
+			thisOrder = os.getOneOrder(request.getParameter("orderId"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		// 2. save orderItems in session
+		request.setAttribute("orderItems", orderItems);
+		request.setAttribute("thisOrder", thisOrder);
+		
+		// 3. turn to myorders page
+		request.getRequestDispatcher("/pages/order/order_detail.jsp").forward(request, response);
 	}
 }

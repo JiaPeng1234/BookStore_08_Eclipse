@@ -56,7 +56,7 @@
 								</c:when>
 							</c:choose>
 						</td>
-						<td><a href="#">Details</a></td>
+						<td><a href="client/OrderClientServlet?method=detail&orderId=${order.orderId }">Details</a></td>
 					</tr>	
 				</c:forEach>
 			</table>

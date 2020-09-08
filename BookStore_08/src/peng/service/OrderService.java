@@ -36,4 +36,11 @@ public interface OrderService {
 	 * @return
 	 */
 	public String checkout(Cart cart, User user);
+	
+	/**
+	 * get one order
+	 * @param orderId
+	 * @return
+	 */
+	public Order getOneOrder(String orderId);
 }
